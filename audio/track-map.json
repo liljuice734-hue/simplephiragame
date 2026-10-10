@@ -1,0 +1,25 @@
+{
+  "angelNumber": 734,
+  "meaning": "hope, faith, and new beginnings",
+  "difficultyOrder": [
+    { "level": 1, "world": "The Long Way Home", "difficulty": "Easy", "tracks": [{ "title": "HIGHEST IN THE ROOM", "artist": "Travis Scott", "file": "travis-scott-highest-in-the-room.mp3", "bpm": 76 }] },
+    { "level": 2, "world": "Secret Mission", "difficulty": "Easy", "tracks": [{ "title": "No Pole", "artist": "Don Toliver", "file": "don-toliver-no-pole.mp3", "bpm": 85 }] },
+    { "level": 3, "world": "Moonlit Promise", "difficulty": "Easy", "tracks": [{ "title": "all the good girls go to hell", "artist": "Billie Eilish", "file": "billie-eilish-all-the-good-girls-go-to-hell.mp3", "bpm": 92 }] },
+    { "level": 4, "world": "Breath of the Flame", "difficulty": "Normal", "tracks": [{ "title": "OverHeated", "artist": "Billie Eilish", "file": "billie-eilish-overheated.mp3", "bpm": 115 }] },
+    { "level": 5, "world": "The Last Bell", "difficulty": "Normal", "tracks": [{ "title": "bury a friend", "artist": "Billie Eilish", "file": "billie-eilish-bury-a-friend.mp3", "bpm": 120 }] },
+    { "level": 6, "world": "Grand Line", "difficulty": "Normal", "tracks": [{ "title": "DEEP IN THE WATER", "artist": "Don Toliver", "file": "don-toliver-deep-in-the-water.mp3", "bpm": 124 }] },
+    { "level": 7, "world": "Beyond the Walls", "difficulty": "Hard", "tracks": [{ "title": "Cannonball", "artist": "Lithe & Don Toliver", "file": "lithe-don-toliver-cannonball.mp3", "bpm": 141 }] },
+    { "level": 8, "world": "Cursed Pulse", "difficulty": "Hard", "tracks": [{ "title": "HBA", "artist": "Playboi Carti", "file": "playboi-carti-hba.mp3", "bpm": 143 }] },
+    { "level": 9, "world": "Hidden Leaf", "difficulty": "Expert", "tracks": [{ "title": "PHILLY", "artist": "Playboi Carti feat. Travis Scott", "file": "playboi-carti-philly-feat-travis-scott.mp3", "bpm": 143 }] },
+    { "level": 10, "world": "Plus Ultra", "difficulty": "Expert", "tracks": [
+      { "title": "Stop Breathing", "artist": "Playboi Carti", "file": "playboi-carti-stop-breathing.mp3", "bpm": 155 },
+      { "title": "FE!N", "artist": "Travis Scott feat. Playboi Carti", "file": "travis-scott-fein-feat-playboi-carti.mp3", "bpm": 156 },
+      { "title": "Rendezvous", "artist": "Don Toliver feat. Yeat", "file": "don-toliver-yeat-rendezvous.mp3", "bpm": 157 }
+    ] },
+    { "unlockAfterLevel": 10, "world": "SilentWOLF", "difficulty": "Secret", "tracks": [
+      { "title": "K9", "artist": "Don Toliver feat. SahBabii", "file": "don-toliver-k9-feat-sahbabii.mp3", "bpm": 140 },
+      { "title": "I Didn't Change My Number", "artist": "Billie Eilish", "file": "billie-eilish-i-didnt-change-my-number.mp3", "bpm": 142 }
+    ] }
+  ],
+  "unusedDuplicate": "legacy-fein-duplicate.mp3 is a byte-identical backup of FE!N and is excluded from the Android package."
+}

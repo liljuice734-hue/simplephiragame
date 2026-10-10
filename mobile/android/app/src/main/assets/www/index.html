@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10101e">
+  <title>SilentWOLF — rhythm worlds</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><a class="brand" href="#home"><span class="brand-mark">✳</span> SILENTWOLF</a><div class="top-note">A little rhythm game, made for you <span class="sparkle">✦</span></div><button class="icon-button" id="soundToggle" aria-label="Toggle sound">♫</button></header>
+    <section class="hero" id="home">
+      <div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> A PERSONAL ANIME RHYTHM ADVENTURE</div><h1>Find your<br><em>own rhythm.</em></h1><p>Catch the beat. Drift through anime-inspired worlds.<br>Every song opens a new little story.</p><button class="primary-button" id="playButton">Choose a world <span>↗</span></button><div class="keyboard-hint">TAP A LANE · OR PRESS <kbd>← ↑ ↓ →</kbd> / <kbd>D F J K</kbd></div></div>
+      <div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-glow"></div><div class="art-sun"></div><div class="art-horizon"></div><div class="art-star star-a">✦</div><div class="art-star star-b">✧</div><div class="art-star star-c">✦</div><div class="art-caption">SOMEWHERE<br>BETWEEN BEATS</div><div class="art-index">01 — 10</div></div>
+      <div class="hero-foot"><span>MADE FOR SILENTWOLF</span><span>ANGEL NUMBER 734 &nbsp; · &nbsp; HOPE, FAITH, NEW BEGINNINGS</span></div>
+    </section>
+    <section class="levels-section" id="levels"><div class="section-heading"><div><div class="eyebrow">TEN ANIME-INSPIRED WORLDS + ONE SECRET</div><h2>Pick a feeling.</h2></div><div class="level-count" id="worldCount">0 / 10 WORLDS CLEARED</div></div><div class="level-grid" id="levelGrid"></div>
+      <div class="customize"><div class="custom-icon">⌁</div><div class="custom-copy"><strong>Set your soundtrack</strong><span>Choose a world, add its song, then set BPM and beat offset to sync its chart.</span></div><label class="track-select-wrap">WORLD<select id="trackWorld"></select></label><label class="bpm-wrap">BPM<input id="bpmInput" type="number" min="50" max="220" step="1" value="112"></label><label class="bpm-wrap">OFFSET MS<input id="offsetInput" type="number" min="0" max="5000" step="10" value="0"></label><label class="upload-button">Add song<input id="musicInput" type="file" accept="audio/*"></label><label class="upload-button photo-upload">Add photos<input id="photoInput" type="file" accept="image/*" multiple></label><span id="currentTrack" class="track-status">No song selected</span><span id="photoStatus" class="track-status">Photos change by world</span></div>
+      <div class="angel-note"><span class="angel-number">734</span><span><strong>HOPE, FAITH &amp; NEW BEGINNINGS</strong><small>Your angel number is woven into the journey.</small></span><span class="angel-star">✧</span></div>
+      <footer>SONGS AND PHOTOS STAY ON THIS DEVICE <span>✳</span></footer>
+    </section>
+  </main>
+  <div class="game-overlay" id="gameOverlay" aria-hidden="true"><div class="game-top"><button class="back-button" id="backButton">← <span>Worlds</span></button><div class="game-song"><span class="song-kicker" id="songKicker">LEVEL 01 / 10</span><strong id="songTitle">The Long Way Home</strong></div><div class="game-score"><span>SCORE</span><strong id="score">000000</strong></div></div><div class="game-stage" id="gameStage"><div class="stage-wash"></div><div class="character-figure" id="characterFigure" aria-hidden="true"><div class="character-aura"></div><div class="character-cape"></div><div class="character-hair"><i></i><b></b></div><div class="character-head"><span class="character-eyes"></span></div><div class="character-body"><span class="character-crest" id="characterCrest">✧</span></div><div class="character-scarf"></div></div><canvas id="gameCanvas"></canvas><div class="game-message" id="gameMessage"><span class="message-kicker" id="messageKicker">TRACK READY</span><h2 id="messageTitle">Some memories take their time.</h2><p id="messageText">Tap the glowing notes as they reach the line.</p><div class="song-picker-wrap" id="songPickerWrap" hidden><label for="gameTrackSelect">CHOOSE TRACK</label><select id="gameTrackSelect"></select></div><button class="primary-button" id="startButton">Start level ▶</button></div><div class="hit-feedback" id="hitFeedback"></div></div><div class="game-bottom"><div class="combo"><strong id="combo">0</strong><span>COMBO</span></div><div class="progress-wrap"><div class="progress-label"><span id="judgement">MAKE SOME MAGIC</span><span id="progressText">0%</span></div><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div></div><div class="accuracy"><strong id="accuracy">—</strong><span>ACCURACY</span></div></div></div>
+  <audio id="audioPlayer" preload="auto"></audio>
+  <script src="game.js"></script>
+</body>
+</html>
